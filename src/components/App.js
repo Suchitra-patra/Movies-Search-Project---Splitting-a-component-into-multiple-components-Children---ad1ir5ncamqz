@@ -32,7 +32,7 @@ const App = () => {
             <div id="result">
                 {results &&
                     results.map((movie) => (
-                        <div className="movie">{movie}</div>
+                        <div className="movie">{movie.title}</div>
                     ))}
             </div>
         </div>
