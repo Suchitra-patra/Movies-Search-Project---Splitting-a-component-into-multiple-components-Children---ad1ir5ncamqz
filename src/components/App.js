@@ -15,6 +15,7 @@ const App = () => {
               setResult(arr);
               console.log(arr);
               setInputValue("");
+            });
     return (
         <div id="main">
             <form id="form">
