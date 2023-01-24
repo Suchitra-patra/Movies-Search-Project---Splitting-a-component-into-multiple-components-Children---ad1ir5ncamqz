@@ -6,10 +6,15 @@ const App = () => {
     const [inputValue, setInputValue] = useState("");
     const [results, setResult] = useState(null);
 
-    function handleClick(e) {}
-
-    function handleChange(e) {}
-
+        let arr = movies.filter((element) => {
+            //element.title.toLowerCase().includes(inputValue.toLowerCase())
+            let arr = movies.filter((element) => {
+                //element.title.toLowerCase().includes(inputValue.toLowerCase())
+                return element.title.toLowerCase().includes(inputValue.toLowerCase());
+              });
+              setResult(arr);
+              console.log(arr);
+              setInputValue("");
     return (
         <div id="main">
             <form id="form">
